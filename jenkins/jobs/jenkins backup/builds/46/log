@@ -1,0 +1,84 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins13624497690977680602.sh
++ cd /root/backup/Jenkins-backup/jenkins
++ git clean -f -d
+Skipping repository ./caches/git-fba2256fd6b1d3acb3c906b81414f8dd
+Removing ./caches/durable-task
+Removing ./caches/git-fba2256fd6b1d3acb3c906b81414f8dd@tmp
+Skipping repository ./workspace/Parallel-2@2
+Skipping repository ./workspace/Pipeline-1
+Skipping repository ./workspace/Parameterized job
+Skipping repository ./workspace/trailjob
+Skipping repository ./workspace/QA Job-2
+Skipping repository ./workspace/Parallel-1
+Skipping repository ./workspace/Parallel-2
+Skipping repository ./workspace/samplejava
+Skipping repository ./workspace/Pipeline-2
+Skipping repository ./workspace/C-project
+Skipping repository ./workspace/Parallel-1@2
+Skipping repository ./workspace/qa test job
+Skipping repository ./workspace/jenkins backup
+Skipping repository ./workspace/Build Job
+Removing ./workspace/Parallel-2@2@tmp
+Removing ./workspace/trailjob@tmp
+Removing ./workspace/Test-Job
+Removing ./workspace/Pipeline-1@tmp
+Removing ./workspace/Parameterized job@tmp
+Removing ./workspace/Pipeline-2@tmp
+Removing ./workspace/Job1
+Removing ./workspace/Parallel-1@2@tmp
+Removing ./workspace/Parallel-2@tmp
+Removing ./workspace/jenkins backup@tmp
+Removing ./workspace/Deploy-Job
+Removing ./workspace/Parallel-1@tmp
+Removing ./workspace/qa test job@tmp
+Removing ./fingerprints
+Removing ./users
+Removing ./.ssh
+Removing ./hudson.model.UpdateCenter.xml
+Removing ./.java
+Removing ./logs
+Removing ./nodeMonitors.xml
+Removing ./.cache
+Removing ./plugins
+Removing ./org.jenkinsci.plugins.gitclient.JGitApacheTool.xml
+Removing ./hudson.plugins.gradle.Gradle.xml
+Removing ./jenkins.security.QueueItemAuthenticatorConfiguration.xml
+Removing ./jenkins.install.InstallUtil.lastExecVersion
+Removing ./org.jenkinsci.plugins.gitclient.JGitTool.xml
+Removing ./jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml
+Removing ./.config
+Removing ./jenkins.model.JenkinsLocationConfiguration.xml
+Removing ./jenkins.install.UpgradeWizard.state
+Removing ./org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+Removing ./secrets
+Removing ./hudson.tasks.Ant.xml
+Removing ./jobs
+Removing ./config.xml
+Removing ./.lastStarted
+Removing ./jenkins.telemetry.Correlator.xml
+Removing ./jenkins.mvn.GlobalMavenConfig.xml
+Removing ./jenkins.plugins.git.GitHooksConfiguration.xml
+Removing ./credentials.xml
+Removing ./userContent
+Removing ./.owner
+Removing ./secret.key
+Removing ./queue.xml.bak
+Removing ./selenium.log
+Removing ./org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration.xml
+Removing ./hudson.plugins.emailext.ExtendedEmailPublisher.xml
+Removing ./identity.key.enc
+Removing ./updates
+Removing ./secret.key.not-so-secret
+Removing ./jenkins.security.UpdateSiteWarningsConfiguration.xml
+Removing ./queue.xml
+Removing ./hudson.plugins.git.GitTool.xml
+Removing ./hudson.tasks.Maven.xml
+Removing ./.groovy
+Removing ./nodes
++ git add config.xml
+fatal: pathspec 'config.xml' did not match any files
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,111 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins14748762318866562743.sh
++ cp -R /var/lib/jenkins/ /root/backup/Jenkins-backup
++ cd /root/backup/Jenkins-backup/jenkins
++ git clean -f -d
+Removing .cache/
+Removing .groovy/
+Removing .java/
+Removing .lastStarted
+Removing .owner
+Removing .ssh/
+Skipping repository caches/git-fba2256fd6b1d3acb3c906b81414f8dd
+Removing caches/durable-task
+Removing caches/git-fba2256fd6b1d3acb3c906b81414f8dd@tmp
+Removing credentials.xml
+Removing fingerprints/
+Removing hudson.model.UpdateCenter.xml
+Removing hudson.plugins.emailext.ExtendedEmailPublisher.xml
+Removing hudson.plugins.git.GitTool.xml
+Removing hudson.plugins.gradle.Gradle.xml
+Removing hudson.tasks.Ant.xml
+Removing hudson.tasks.Maven.xml
+Removing identity.key.enc
+Removing jenkins.install.InstallUtil.lastExecVersion
+Removing jenkins.install.UpgradeWizard.state
+Removing jenkins.model.JenkinsLocationConfiguration.xml
+Removing jenkins.mvn.GlobalMavenConfig.xml
+Removing jenkins.plugins.git.GitHooksConfiguration.xml
+Removing jenkins.security.QueueItemAuthenticatorConfiguration.xml
+Removing jenkins.security.UpdateSiteWarningsConfiguration.xml
+Removing jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml
+Removing jenkins.telemetry.Correlator.xml
+Removing jobs/jenkins backup/builds/34/
+Removing jobs/jenkins backup/builds/35/
+Removing jobs/jenkins backup/builds/36/
+Removing jobs/jenkins backup/builds/37/
+Removing jobs/jenkins backup/builds/38/
+Removing jobs/jenkins backup/builds/39/
+Removing jobs/jenkins backup/builds/40/
+Removing jobs/jenkins backup/builds/41/
+Removing jobs/jenkins backup/builds/42/
+Removing logs/
+Removing nodeMonitors.xml
+Removing nodes/
+Removing org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration.xml
+Removing org.jenkinsci.plugins.gitclient.JGitApacheTool.xml
+Removing org.jenkinsci.plugins.gitclient.JGitTool.xml
+Removing org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+Removing plugins/
+Removing queue.xml
+Removing queue.xml.bak
+Removing secret.key
+Removing secret.key.not-so-secret
+Removing secrets/
+Removing selenium.log
+Removing updates/
+Removing userContent/
+Removing users/
+Skipping repository workspace/Parallel-2@2
+Skipping repository workspace/Pipeline-1
+Skipping repository workspace/Parameterized job
+Skipping repository workspace/trailjob
+Skipping repository workspace/QA Job-2
+Skipping repository workspace/Parallel-1
+Skipping repository workspace/Parallel-2
+Skipping repository workspace/samplejava
+Skipping repository workspace/Pipeline-2
+Skipping repository workspace/C-project
+Skipping repository workspace/Parallel-1@2
+Skipping repository workspace/qa test job
+Skipping repository workspace/jenkins backup
+Skipping repository workspace/Build Job
+Removing workspace/Parallel-2@2@tmp
+Removing workspace/trailjob@tmp
+Removing workspace/Test-Job
+Removing workspace/Pipeline-1@tmp
+Removing workspace/Parameterized job@tmp
+Removing workspace/Pipeline-2@tmp
+Removing workspace/Job1
+Removing workspace/Parallel-1@2@tmp
+Removing workspace/Parallel-2@tmp
+Removing workspace/jenkins backup@tmp
+Removing workspace/Deploy-Job
+Removing workspace/Parallel-1@tmp
+Removing workspace/qa test job@tmp
++ git config pull.rebase false
++ git add config.xml
++ git commit -m added config backup
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   jobs/jenkins backup/builds/permalinks
+	modified:   jobs/jenkins backup/config.xml
+	modified:   jobs/jenkins backup/nextBuildNumber
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Jenkins-backup/
+	caches/
+	workspace/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

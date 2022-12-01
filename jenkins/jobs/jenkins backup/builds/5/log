@@ -1,0 +1,9 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins1005459419682198987.sh
++ cd /var/lib/jenkins/
++ git add Jenkins-backup caches config.xml credentials.xml fingerprints hudson.model.UpdateCenter.xml hudson.plugins.emailext.ExtendedEmailPublisher.xml hudson.plugins.git.GitTool.xml hudson.plugins.gradle.Gradle.xml hudson.tasks.Ant.xml hudson.tasks.Maven.xml identity.key.enc jenkins.install.InstallUtil.lastExecVersion jenkins.install.UpgradeWizard.state jenkins.model.JenkinsLocationConfiguration.xml jenkins.mvn.GlobalMavenConfig.xml jenkins.plugins.git.GitHooksConfiguration.xml jenkins.security.QueueItemAuthenticatorConfiguration.xml jenkins.security.UpdateSiteWarningsConfiguration.xml jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml jenkins.telemetry.Correlator.xml jobs logs nodeMonitors.xml nodes org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration.xml org.jenkinsci.plugins.gitclient.JGitApacheTool.xml org.jenkinsci.plugins.gitclient.JGitTool.xml org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml plugins queue.xml queue.xml.bak secret.key secret.key.not-so-secret secrets selenium.log updates userContent users workspace
+fatal: not a git repository (or any of the parent directories): .git
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

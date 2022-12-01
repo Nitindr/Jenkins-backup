@@ -1,0 +1,40 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building remotely on [8mha:////4JyVhY3yAlwBlqWHiWfj314qDw3kybrtFUi+vpU9qgoaAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /opt/jenkins/workspace/samplejava
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /opt/jenkins/workspace/samplejava/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/Nitindr/Java-project.git # timeout=10
+Fetching upstream changes from https://github.com/Nitindr/Java-project.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/Nitindr/Java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 541b5032bc4dcffadcb9206a1dc5eb588f2d2789 (refs/remotes/origin/main)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 541b5032bc4dcffadcb9206a1dc5eb588f2d2789 # timeout=10
+Commit message: "added pom.xml"
+ > /usr/bin/git rev-list --no-walk 541b5032bc4dcffadcb9206a1dc5eb588f2d2789 # timeout=10
+[samplejava] $ /bin/sh -xe /tmp/jenkins13843226568913292138.sh
++ mvn clean build
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36mworks.buddy.samples:works-with-heroku[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding works-with-heroku 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ war ]---------------------------------[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.319 s
+[[1;34mINFO[m] Finished at: 2022-11-23T15:20:59Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Unknown lifecycle phase "build". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

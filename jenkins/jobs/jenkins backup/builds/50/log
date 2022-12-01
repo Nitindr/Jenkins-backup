@@ -1,0 +1,18 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins2192431209924477438.sh
++ cd /root/backup/Jenkins-backup/jenkins
++ git add file2
++ git commit -m added jenkins backup
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	caches/
+	workspace/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,889 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins2278212286804083554.sh
++ cd /home/ubuntu/Jenkins/Jenkins-backup/jenkins
++ git add *.xml
++ git commit -m added jenkins backup
+[main (root-commit) 83c3b37] added jenkins backup
+ Committer: root <root@ip-172-31-1-57.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 863 files changed, 38009 insertions(+)
+ create mode 100644 jenkins/config.xml
+ create mode 100644 jenkins/credentials.xml
+ create mode 100644 jenkins/fingerprints/3d/96/d5e9d055631a79f059288be412bd.xml
+ create mode 100644 jenkins/fingerprints/a7/15/45ad646bdef6c072cea4710e9ace.xml
+ create mode 100644 jenkins/fingerprints/ba/da/966a4a5976cf1258459a09fe0e66.xml
+ create mode 100644 jenkins/hudson.model.UpdateCenter.xml
+ create mode 100644 jenkins/hudson.plugins.emailext.ExtendedEmailPublisher.xml
+ create mode 100644 jenkins/hudson.plugins.git.GitTool.xml
+ create mode 100644 jenkins/hudson.plugins.gradle.Gradle.xml
+ create mode 100644 jenkins/hudson.tasks.Ant.xml
+ create mode 100644 jenkins/hudson.tasks.Maven.xml
+ create mode 100644 jenkins/jenkins.model.JenkinsLocationConfiguration.xml
+ create mode 100644 jenkins/jenkins.mvn.GlobalMavenConfig.xml
+ create mode 100644 jenkins/jenkins.plugins.git.GitHooksConfiguration.xml
+ create mode 100644 jenkins/jenkins.security.QueueItemAuthenticatorConfiguration.xml
+ create mode 100644 jenkins/jenkins.security.UpdateSiteWarningsConfiguration.xml
+ create mode 100644 jenkins/jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml
+ create mode 100644 jenkins/jenkins.telemetry.Correlator.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/2/build.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/3/build.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/4/build.xml
+ create mode 100644 jenkins/jobs/Build Job/builds/4/changelog.xml
+ create mode 100644 jenkins/jobs/Build Job/config.xml
+ create mode 100644 jenkins/jobs/C-project/builds/1/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/10/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/10/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/11/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/11/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/12/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/12/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/2/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/3/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/4/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/5/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/6/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/7/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/8/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/builds/9/build.xml
+ create mode 100644 jenkins/jobs/C-project/builds/9/changelog.xml
+ create mode 100644 jenkins/jobs/C-project/config.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/2/build.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/3/build.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/Deploy-Job/config.xml
+ create mode 100644 jenkins/jobs/Job1/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/2/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/3/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/4/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/4/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/5/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/5/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/6/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/7/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/7/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/builds/8/build.xml
+ create mode 100644 jenkins/jobs/Job1/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/Job1/config.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/changelog16018386170358086803.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/10.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/11.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/12.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/13.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/14.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/15.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/16.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/17.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/18.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/19.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/2.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/20.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/21.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/22.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/23.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/24.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/25.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/26.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/27.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/28.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/29.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/3.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/31.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/32.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/33.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/34.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/35.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/36.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/37.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/38.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/39.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/4.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/40.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/41.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/42.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/43.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/44.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/45.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/46.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/47.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/48.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/49.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/5.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/50.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/51.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/52.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/53.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/54.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/55.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/56.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/57.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/58.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/59.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/6.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/60.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/61.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/62.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/63.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/64.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/65.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/66.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/67.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/68.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/69.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/7.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/8.xml
+ create mode 100644 jenkins/jobs/Parallel-1/builds/1/workflow/9.xml
+ create mode 100644 jenkins/jobs/Parallel-1/config.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/changelog10266380465795484868.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/10.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/11.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/12.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/13.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/14.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/15.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/16.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/17.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/18.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/19.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/2.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/20.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/21.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/22.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/23.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/24.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/25.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/26.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/27.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/28.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/29.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/3.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/31.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/32.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/33.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/34.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/35.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/36.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/37.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/38.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/39.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/4.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/40.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/41.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/42.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/43.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/44.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/45.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/46.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/47.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/48.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/49.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/5.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/50.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/51.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/52.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/55.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/56.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/57.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/58.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/59.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/6.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/60.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/61.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/62.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/63.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/64.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/65.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/66.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/67.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/68.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/69.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/7.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/70.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/71.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/72.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/73.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/74.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/75.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/76.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/77.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/78.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/79.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/8.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/80.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/81.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/82.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/83.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/84.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/85.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/86.xml
+ create mode 100644 jenkins/jobs/Parallel-2/builds/1/workflow/9.xml
+ create mode 100644 jenkins/jobs/Parallel-2/config.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/changelog10679790605927454276.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/10.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/11.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/12.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/13.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/14.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/15.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/16.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/17.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/18.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/19.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/2.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/20.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/21.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/22.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/23.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/24.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/25.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/26.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/27.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/28.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/29.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/3.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/30.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/31.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/32.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/33.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/34.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/4.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/5.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/6.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/7.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/8.xml
+ create mode 100644 jenkins/jobs/Parameterized job/builds/1/workflow/9.xml
+ create mode 100644 jenkins/jobs/Parameterized job/config.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/build.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/changelog14368786744430795341.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/10.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/11.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/12.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/13.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/14.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/15.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/16.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/17.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/18.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/19.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/2.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/20.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/21.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/22.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/23.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/24.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/25.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/26.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/27.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/28.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/29.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/3.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/30.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/31.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/32.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/4.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/5.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/6.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/7.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/8.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/2/workflow/9.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/build.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/changelog7945661955884726710.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/10.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/11.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/12.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/13.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/14.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/15.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/16.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/17.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/18.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/19.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/2.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/20.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/21.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/22.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/23.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/24.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/25.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/26.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/27.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/28.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/29.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/3.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/30.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/31.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/32.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/4.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/5.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/6.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/7.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/8.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/3/workflow/9.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/build.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/changelog1321694822431436718.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/10.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/11.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/12.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/13.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/14.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/15.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/16.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/17.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/18.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/19.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/2.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/20.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/21.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/22.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/23.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/24.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/25.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/26.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/27.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/28.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/29.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/3.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/30.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/31.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/32.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/33.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/34.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/4.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/5.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/6.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/7.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/8.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/builds/4/workflow/9.xml
+ create mode 100644 jenkins/jobs/Pipeline-1/config.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/changelog15992970636926500556.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/10.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/11.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/12.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/13.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/14.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/15.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/16.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/17.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/18.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/19.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/2.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/20.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/21.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/22.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/23.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/24.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/25.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/26.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/27.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/28.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/29.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/3.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/30.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/31.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/32.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/33.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/34.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/35.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/36.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/37.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/38.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/39.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/4.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/40.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/41.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/42.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/43.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/44.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/45.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/46.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/47.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/48.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/5.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/6.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/7.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/8.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/builds/1/workflow/9.xml
+ create mode 100644 jenkins/jobs/Pipeline-2/config.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/1/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/10/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/10/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/11/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/11/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/12/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/12/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/13/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/13/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/14/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/14/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/15/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/15/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/16/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/16/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/17/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/17/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/2/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/3/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/4/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/4/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/5/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/5/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/6/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/7/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/7/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/8/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/9/build.xml
+ create mode 100644 jenkins/jobs/QA Job-2/builds/9/changelog.xml
+ create mode 100644 jenkins/jobs/QA Job-2/config.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/1/build.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/2/build.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/3/build.xml
+ create mode 100644 jenkins/jobs/Test-Job/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/Test-Job/config.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/1/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/10/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/10/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/11/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/11/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/12/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/12/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/13/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/13/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/14/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/14/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/15/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/15/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/16/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/2/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/3/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/4/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/5/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/5/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/6/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/7/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/7/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/8/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/9/build.xml
+ create mode 100644 jenkins/jobs/jenkins backup/builds/9/changelog.xml
+ create mode 100644 jenkins/jobs/jenkins backup/config.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/1/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/2/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/3/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/4/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/5/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/6/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/7/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/8/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/build.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/changelog17124196478094292492.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/10.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/11.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/12.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/13.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/14.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/15.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/16.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/17.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/18.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/19.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/2.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/20.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/21.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/22.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/23.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/24.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/25.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/26.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/27.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/28.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/29.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/3.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/30.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/31.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/32.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/33.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/34.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/35.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/36.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/37.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/38.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/39.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/4.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/40.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/41.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/42.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/43.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/44.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/45.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/46.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/47.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/48.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/49.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/5.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/50.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/51.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/52.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/53.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/54.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/55.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/56.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/57.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/58.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/59.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/6.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/60.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/61.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/62.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/63.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/7.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/8.xml
+ create mode 100644 jenkins/jobs/qa test job/builds/9/workflow/9.xml
+ create mode 100644 jenkins/jobs/qa test job/config.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/1/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/1/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/2/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/3/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/4/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/4/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/5/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/5/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/6/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/7/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/7/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/8/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/9/build.xml
+ create mode 100644 jenkins/jobs/samplejava/builds/9/changelog.xml
+ create mode 100644 jenkins/jobs/samplejava/config.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/1/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/2/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/2/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/3/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/3/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/4/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/4/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/5/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/5/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/6/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/6/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/7/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/7/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/8/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/8/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/9/build.xml
+ create mode 100644 jenkins/jobs/trailjob/builds/9/changelog.xml
+ create mode 100644 jenkins/jobs/trailjob/config.xml
+ create mode 100644 jenkins/nodeMonitors.xml
+ create mode 100644 jenkins/nodes/slave1/config.xml
+ create mode 100644 jenkins/nodes/slave2/config.xml
+ create mode 100644 jenkins/org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration.xml
+ create mode 100644 jenkins/org.jenkinsci.plugins.gitclient.JGitApacheTool.xml
+ create mode 100644 jenkins/org.jenkinsci.plugins.gitclient.JGitTool.xml
+ create mode 100644 jenkins/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+ create mode 100644 jenkins/plugins/ace-editor/META-INF/maven/org.jenkins-ci.ui/ace-editor/pom.xml
+ create mode 100644 jenkins/plugins/ace-editor/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ant/META-INF/maven/org.jenkins-ci.plugins/ant/pom.xml
+ create mode 100644 jenkins/plugins/ant/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/antisamy-markup-formatter/META-INF/maven/org.jenkins-ci.plugins/antisamy-markup-formatter/pom.xml
+ create mode 100644 jenkins/plugins/antisamy-markup-formatter/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/apache-httpcomponents-client-4-api/META-INF/maven/org.jenkins-ci.plugins/apache-httpcomponents-client-4-api/pom.xml
+ create mode 100644 jenkins/plugins/apache-httpcomponents-client-4-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/artifactory/META-INF/maven/org.jenkins-ci.plugins/artifactory/pom.xml
+ create mode 100644 jenkins/plugins/artifactory/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/authentication-tokens/META-INF/maven/org.jenkins-ci.plugins/authentication-tokens/pom.xml
+ create mode 100644 jenkins/plugins/authentication-tokens/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-autofavorite/META-INF/maven/org.jenkins-ci.plugins/blueocean-autofavorite/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-autofavorite/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-bitbucket-pipeline/META-INF/maven/io.jenkins.blueocean/blueocean-bitbucket-pipeline/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-bitbucket-pipeline/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-commons/META-INF/maven/io.jenkins.blueocean/blueocean-commons/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-commons/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-config/META-INF/maven/io.jenkins.blueocean/blueocean-config/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-config/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-core-js/META-INF/maven/io.jenkins.blueocean/blueocean-core-js/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-core-js/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-dashboard/META-INF/maven/io.jenkins.blueocean/blueocean-dashboard/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-dashboard/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-display-url/META-INF/maven/org.jenkins-ci.plugins/blueocean-display-url/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-display-url/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-events/META-INF/maven/io.jenkins.blueocean/blueocean-events/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-events/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-git-pipeline/META-INF/maven/io.jenkins.blueocean/blueocean-git-pipeline/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-git-pipeline/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-github-pipeline/META-INF/maven/io.jenkins.blueocean/blueocean-github-pipeline/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-github-pipeline/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-i18n/META-INF/maven/io.jenkins.blueocean/blueocean-i18n/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-i18n/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-jwt/META-INF/maven/io.jenkins.blueocean/blueocean-jwt/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-jwt/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-personalization/META-INF/maven/io.jenkins.blueocean/blueocean-personalization/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-personalization/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-api-impl/META-INF/maven/io.jenkins.blueocean/blueocean-pipeline-api-impl/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-api-impl/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-editor/META-INF/maven/io.jenkins.blueocean/blueocean-pipeline-editor/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-editor/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-scm-api/META-INF/maven/io.jenkins.blueocean/blueocean-pipeline-scm-api/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-pipeline-scm-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-rest-impl/META-INF/maven/io.jenkins.blueocean/blueocean-rest-impl/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-rest-impl/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-rest/META-INF/maven/io.jenkins.blueocean/blueocean-rest/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-rest/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean-web/META-INF/maven/io.jenkins.blueocean/blueocean-web/pom.xml
+ create mode 100644 jenkins/plugins/blueocean-web/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/blueocean/META-INF/maven/io.jenkins.blueocean/blueocean/pom.xml
+ create mode 100644 jenkins/plugins/blueocean/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/bootstrap5-api/META-INF/maven/io.jenkins.plugins/bootstrap5-api/pom.xml
+ create mode 100644 jenkins/plugins/bootstrap5-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/bouncycastle-api/META-INF/maven/org.jenkins-ci.plugins/bouncycastle-api/pom.xml
+ create mode 100644 jenkins/plugins/branch-api/META-INF/maven/org.jenkins-ci.plugins/branch-api/pom.xml
+ create mode 100644 jenkins/plugins/branch-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/build-timeout/META-INF/maven/org.jenkins-ci.plugins/build-timeout/pom.xml
+ create mode 100644 jenkins/plugins/build-timeout/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/caffeine-api/META-INF/maven/io.jenkins.plugins/caffeine-api/pom.xml
+ create mode 100644 jenkins/plugins/caffeine-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/checks-api/META-INF/maven/io.jenkins.plugins/checks-api/pom.xml
+ create mode 100644 jenkins/plugins/checks-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/cloudbees-bitbucket-branch-source/META-INF/maven/org.jenkins-ci.plugins/cloudbees-bitbucket-branch-source/pom.xml
+ create mode 100644 jenkins/plugins/cloudbees-bitbucket-branch-source/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/cloudbees-folder/META-INF/maven/org.jenkins-ci.plugins/cloudbees-folder/pom.xml
+ create mode 100644 jenkins/plugins/cloudbees-folder/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/command-launcher/META-INF/maven/org.jenkins-ci.plugins/command-launcher/pom.xml
+ create mode 100644 jenkins/plugins/command-launcher/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/commons-lang3-api/META-INF/maven/io.jenkins.plugins/commons-lang3-api/pom.xml
+ create mode 100644 jenkins/plugins/commons-lang3-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/commons-text-api/META-INF/maven/io.jenkins.plugins/commons-text-api/pom.xml
+ create mode 100644 jenkins/plugins/commons-text-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/config-file-provider/META-INF/maven/org.jenkins-ci.plugins/config-file-provider/pom.xml
+ create mode 100644 jenkins/plugins/config-file-provider/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/credentials-binding/META-INF/maven/org.jenkins-ci.plugins/credentials-binding/pom.xml
+ create mode 100644 jenkins/plugins/credentials-binding/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/credentials/META-INF/maven/org.jenkins-ci.plugins/credentials/pom.xml
+ create mode 100644 jenkins/plugins/credentials/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/display-url-api/META-INF/maven/org.jenkins-ci.plugins/display-url-api/pom.xml
+ create mode 100644 jenkins/plugins/display-url-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/durable-task/META-INF/maven/org.jenkins-ci.plugins/durable-task/pom.xml
+ create mode 100644 jenkins/plugins/durable-task/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/echarts-api/META-INF/maven/io.jenkins.plugins/echarts-api/pom.xml
+ create mode 100644 jenkins/plugins/echarts-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/email-ext/META-INF/maven/org.jenkins-ci.plugins/email-ext/pom.xml
+ create mode 100644 jenkins/plugins/email-ext/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/favorite/META-INF/maven/org.jvnet.hudson.plugins/favorite/pom.xml
+ create mode 100644 jenkins/plugins/favorite/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/font-awesome-api/META-INF/maven/io.jenkins.plugins/font-awesome-api/pom.xml
+ create mode 100644 jenkins/plugins/font-awesome-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/gearman-plugin/META-INF/maven/org.jenkins-ci.plugins/gearman-plugin/pom.xml
+ create mode 100644 jenkins/plugins/gearman-plugin/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/git-client/META-INF/maven/org.jenkins-ci.plugins/git-client/pom.xml
+ create mode 100644 jenkins/plugins/git-client/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/git/META-INF/maven/org.jenkins-ci.plugins/git/pom.xml
+ create mode 100644 jenkins/plugins/git/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/github-api/META-INF/maven/org.jenkins-ci.plugins/github-api/pom.xml
+ create mode 100644 jenkins/plugins/github-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/github-branch-source/META-INF/maven/org.jenkins-ci.plugins/github-branch-source/pom.xml
+ create mode 100644 jenkins/plugins/github-branch-source/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/github/META-INF/maven/com.coravy.hudson.plugins.github/github/pom.xml
+ create mode 100644 jenkins/plugins/github/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/gradle/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/handy-uri-templates-2-api/META-INF/maven/org.jenkins-ci.plugins/handy-uri-templates-2-api/pom.xml
+ create mode 100644 jenkins/plugins/handy-uri-templates-2-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/htmlpublisher/META-INF/maven/org.jenkins-ci.plugins/htmlpublisher/pom.xml
+ create mode 100644 jenkins/plugins/htmlpublisher/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/instance-identity/META-INF/maven/org.jenkins-ci.modules/instance-identity/pom.xml
+ create mode 100644 jenkins/plugins/instance-identity/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ionicons-api/META-INF/maven/io.jenkins.plugins/ionicons-api/pom.xml
+ create mode 100644 jenkins/plugins/ionicons-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ivy/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jackson2-api/META-INF/maven/org.jenkins-ci.plugins/jackson2-api/pom.xml
+ create mode 100644 jenkins/plugins/jackson2-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jakarta-activation-api/META-INF/maven/io.jenkins.plugins/jakarta-activation-api/pom.xml
+ create mode 100644 jenkins/plugins/jakarta-activation-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jakarta-mail-api/META-INF/maven/io.jenkins.plugins/jakarta-mail-api/pom.xml
+ create mode 100644 jenkins/plugins/jakarta-mail-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/javadoc/META-INF/maven/org.jenkins-ci.plugins/javadoc/pom.xml
+ create mode 100644 jenkins/plugins/javadoc/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/javax-activation-api/META-INF/maven/io.jenkins.plugins/javax-activation-api/pom.xml
+ create mode 100644 jenkins/plugins/javax-activation-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/javax-mail-api/META-INF/maven/io.jenkins.plugins/javax-mail-api/pom.xml
+ create mode 100644 jenkins/plugins/javax-mail-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jaxb/META-INF/maven/io.jenkins.plugins/jaxb/pom.xml
+ create mode 100644 jenkins/plugins/jaxb/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jdk-tool/META-INF/maven/org.jenkins-ci.plugins/jdk-tool/pom.xml
+ create mode 100644 jenkins/plugins/jdk-tool/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jenkins-design-language/META-INF/maven/io.jenkins.blueocean/jenkins-design-language/pom.xml
+ create mode 100644 jenkins/plugins/jenkins-design-language/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jjwt-api/META-INF/maven/io.jenkins.plugins/jjwt-api/pom.xml
+ create mode 100644 jenkins/plugins/jjwt-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jquery3-api/META-INF/maven/io.jenkins.plugins/jquery3-api/pom.xml
+ create mode 100644 jenkins/plugins/jquery3-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/jsch/META-INF/maven/org.jenkins-ci.plugins/jsch/pom.xml
+ create mode 100644 jenkins/plugins/jsch/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/junit/META-INF/maven/org.jenkins-ci.plugins/junit/pom.xml
+ create mode 100644 jenkins/plugins/junit/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ldap/META-INF/maven/org.jenkins-ci.plugins/ldap/pom.xml
+ create mode 100644 jenkins/plugins/ldap/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/mailer/META-INF/maven/org.jenkins-ci.plugins/mailer/pom.xml
+ create mode 100644 jenkins/plugins/mailer/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/matrix-auth/META-INF/maven/org.jenkins-ci.plugins/matrix-auth/pom.xml
+ create mode 100644 jenkins/plugins/matrix-auth/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/matrix-project/META-INF/maven/org.jenkins-ci.plugins/matrix-project/pom.xml
+ create mode 100644 jenkins/plugins/matrix-project/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/maven-plugin/META-INF/maven/org.jenkins-ci.main/maven-plugin/pom.xml
+ create mode 100644 jenkins/plugins/maven-plugin/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/mina-sshd-api-common/META-INF/maven/io.jenkins.plugins.mina-sshd-api/mina-sshd-api-common/pom.xml
+ create mode 100644 jenkins/plugins/mina-sshd-api-common/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/mina-sshd-api-core/META-INF/maven/io.jenkins.plugins.mina-sshd-api/mina-sshd-api-core/pom.xml
+ create mode 100644 jenkins/plugins/mina-sshd-api-core/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/momentjs/META-INF/maven/org.jenkins-ci.ui/momentjs/pom.xml
+ create mode 100644 jenkins/plugins/momentjs/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/okhttp-api/META-INF/maven/io.jenkins.plugins/okhttp-api/pom.xml
+ create mode 100644 jenkins/plugins/okhttp-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pam-auth/META-INF/maven/org.jenkins-ci.plugins/pam-auth/pom.xml
+ create mode 100644 jenkins/plugins/pam-auth/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/parameterized-trigger/META-INF/maven/org.jenkins-ci.plugins/parameterized-trigger/pom.xml
+ create mode 100644 jenkins/plugins/parameterized-trigger/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-build-step/META-INF/maven/org.jenkins-ci.plugins/pipeline-build-step/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-build-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-github-lib/META-INF/maven/org.jenkins-ci.plugins/pipeline-github-lib/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-github-lib/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-graph-analysis/META-INF/maven/org.jenkins-ci.plugins/pipeline-graph-analysis/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-graph-analysis/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-groovy-lib/META-INF/maven/io.jenkins.plugins/pipeline-groovy-lib/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-groovy-lib/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-input-step/META-INF/maven/org.jenkins-ci.plugins/pipeline-input-step/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-input-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-milestone-step/META-INF/maven/org.jenkins-ci.plugins/pipeline-milestone-step/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-milestone-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-model-api/META-INF/maven/org.jenkinsci.plugins/pipeline-model-api/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-model-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-model-definition/META-INF/maven/org.jenkinsci.plugins/pipeline-model-definition/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-model-definition/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-model-extensions/META-INF/maven/org.jenkinsci.plugins/pipeline-model-extensions/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-model-extensions/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-rest-api/META-INF/maven/org.jenkins-ci.plugins.pipeline-stage-view/pipeline-rest-api/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-rest-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-step/META-INF/maven/org.jenkins-ci.plugins/pipeline-stage-step/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-tags-metadata/META-INF/maven/org.jenkinsci.plugins/pipeline-stage-tags-metadata/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-tags-metadata/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-view/META-INF/maven/org.jenkins-ci.plugins.pipeline-stage-view/pipeline-stage-view/pom.xml
+ create mode 100644 jenkins/plugins/pipeline-stage-view/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/plain-credentials/META-INF/maven/org.jenkins-ci.plugins/plain-credentials/pom.xml
+ create mode 100644 jenkins/plugins/plain-credentials/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/plugin-util-api/META-INF/maven/io.jenkins.plugins/plugin-util-api/pom.xml
+ create mode 100644 jenkins/plugins/plugin-util-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/popper2-api/META-INF/maven/io.jenkins.plugins/popper2-api/pom.xml
+ create mode 100644 jenkins/plugins/popper2-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/pubsub-light/META-INF/maven/org.jenkins-ci.plugins/pubsub-light/pom.xml
+ create mode 100644 jenkins/plugins/pubsub-light/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/resource-disposer/META-INF/maven/org.jenkins-ci.plugins/resource-disposer/pom.xml
+ create mode 100644 jenkins/plugins/resource-disposer/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/scm-api/META-INF/maven/org.jenkins-ci.plugins/scm-api/pom.xml
+ create mode 100644 jenkins/plugins/scm-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/script-security/META-INF/maven/org.jenkins-ci.plugins/script-security/pom.xml
+ create mode 100644 jenkins/plugins/script-security/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/selenium/META-INF/maven/org.jenkins-ci.plugins/selenium/pom.xml
+ create mode 100644 jenkins/plugins/selenium/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/snakeyaml-api/META-INF/maven/io.jenkins.plugins/snakeyaml-api/pom.xml
+ create mode 100644 jenkins/plugins/snakeyaml-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/sonar-quality-gates/META-INF/maven/org.jenkins-ci.plugins/sonar-quality-gates/pom.xml
+ create mode 100644 jenkins/plugins/sonar-quality-gates/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/sse-gateway/META-INF/maven/org.jenkins-ci.plugins/sse-gateway/pom.xml
+ create mode 100644 jenkins/plugins/sse-gateway/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ssh-credentials/META-INF/maven/org.jenkins-ci.plugins/ssh-credentials/pom.xml
+ create mode 100644 jenkins/plugins/ssh-credentials/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ssh-slaves/META-INF/maven/org.jenkins-ci.plugins/ssh-slaves/pom.xml
+ create mode 100644 jenkins/plugins/ssh-slaves/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/sshd/META-INF/maven/org.jenkins-ci.modules/sshd/pom.xml
+ create mode 100644 jenkins/plugins/sshd/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/structs/META-INF/maven/org.jenkins-ci.plugins/structs/pom.xml
+ create mode 100644 jenkins/plugins/structs/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/timestamper/META-INF/maven/org.jenkins-ci.plugins/timestamper/pom.xml
+ create mode 100644 jenkins/plugins/timestamper/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/token-macro/META-INF/maven/org.jenkins-ci.plugins/token-macro/pom.xml
+ create mode 100644 jenkins/plugins/token-macro/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/trilead-api/META-INF/maven/org.jenkins-ci.plugins/trilead-api/pom.xml
+ create mode 100644 jenkins/plugins/trilead-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/upstream-downstream-view/META-INF/maven/org.jenkins-ci.plugins/upstream-downstream-view/pom.xml
+ create mode 100644 jenkins/plugins/upstream-downstream-view/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/variant/META-INF/maven/org.jenkins-ci.plugins/variant/pom.xml
+ create mode 100644 jenkins/plugins/variant/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/windows-slaves/META-INF/maven/org.jenkins-ci.plugins/windows-slaves/pom.xml
+ create mode 100644 jenkins/plugins/windows-slaves/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-aggregator/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-aggregator/pom.xml
+ create mode 100644 jenkins/plugins/workflow-aggregator/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-api/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-api/pom.xml
+ create mode 100644 jenkins/plugins/workflow-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-basic-steps/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-basic-steps/pom.xml
+ create mode 100644 jenkins/plugins/workflow-basic-steps/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-cps/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-cps/pom.xml
+ create mode 100644 jenkins/plugins/workflow-cps/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.xml
+ create mode 100644 jenkins/plugins/workflow-durable-task-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-job/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-job/pom.xml
+ create mode 100644 jenkins/plugins/workflow-job/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-multibranch/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-multibranch/pom.xml
+ create mode 100644 jenkins/plugins/workflow-multibranch/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-scm-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-scm-step/pom.xml
+ create mode 100644 jenkins/plugins/workflow-scm-step/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-step-api/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-step-api/pom.xml
+ create mode 100644 jenkins/plugins/workflow-step-api/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/workflow-support/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-support/pom.xml
+ create mode 100644 jenkins/plugins/workflow-support/WEB-INF/licenses.xml
+ create mode 100644 jenkins/plugins/ws-cleanup/META-INF/maven/org.jenkins-ci.plugins/ws-cleanup/pom.xml
+ create mode 100644 jenkins/plugins/ws-cleanup/WEB-INF/licenses.xml
+ create mode 100644 jenkins/queue.xml
+ create mode 100644 jenkins/users/bruce_17456562122971396797/config.xml
+ create mode 100644 jenkins/users/dummy_6339480967914690473/config.xml
+ create mode 100644 jenkins/users/ec2user_1027227430773213153/config.xml
+ create mode 100644 jenkins/users/nitindr_9556701906409341495/config.xml
+ create mode 100644 jenkins/users/noreply_17290577828301422539/config.xml
+ create mode 100644 jenkins/users/ubuntu_2994469765641545016/config.xml
+ create mode 100644 jenkins/users/users.xml
++ git push https://github.com/Nitindr/Jenkins-backup.git
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

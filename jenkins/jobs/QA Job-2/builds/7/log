@@ -1,0 +1,27 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/QA Job-2
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/QA Job-2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/Nitindr/C-project.git # timeout=10
+Fetching upstream changes from https://github.com/Nitindr/C-project.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/Nitindr/C-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 2806f6de1216f78a0e759695d1afa942750e6211 (refs/remotes/origin/main)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 2806f6de1216f78a0e759695d1afa942750e6211 # timeout=10
+Commit message: "deleted"
+ > /usr/bin/git rev-list --no-walk 2806f6de1216f78a0e759695d1afa942750e6211 # timeout=10
+[QA Job-2] $ /bin/sh -xe /tmp/jenkins15912492861130678764.sh
++ cd /var/lib/jenkins/workspace/C-project
++ make TRAIL2.exe
+make: 'TRAIL2.exe' is up to date.
++ ssh ec2-user@172.31.8.211
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Host key verification failed.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

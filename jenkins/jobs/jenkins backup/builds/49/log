@@ -1,0 +1,26 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins13064231756949411790.sh
++ cd /root/backup/Jenkins-backup/jenkins
++ git clean -f -d
+Skipping repository caches/git-fba2256fd6b1d3acb3c906b81414f8dd
+Removing file3
+Skipping repository workspace/Parallel-2@2
+Skipping repository workspace/Pipeline-1
+Skipping repository workspace/Parameterized job
+Skipping repository workspace/trailjob
+Skipping repository workspace/QA Job-2
+Skipping repository workspace/Parallel-1
+Skipping repository workspace/Parallel-2
+Skipping repository workspace/samplejava
+Skipping repository workspace/Pipeline-2
+Skipping repository workspace/C-project
+Skipping repository workspace/Parallel-1@2
+Skipping repository workspace/qa test job
+Skipping repository workspace/jenkins backup
+Skipping repository workspace/Build Job
++ git add file3
+fatal: pathspec 'file3' did not match any files
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

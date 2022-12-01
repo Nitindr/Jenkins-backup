@@ -1,0 +1,35 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins7254935456560997634.sh
++ cp -R /var/lib/jenkins/ /root/backup/Jenkins-backup
++ cd /root/backup/Jenkins-backup/jenkins
++ git add .config/
++ git commit -m added config backup
+[main e22dacb] added config backup
+ Committer: root <root@ip-172-31-1-57.ap-south-1.compute.internal>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 jenkins/.config/jgit/config
++ git push https://github.com/Nitindr/Jenkins-backup.git
+To https://github.com/Nitindr/Jenkins-backup.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Nitindr/Jenkins-backup.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

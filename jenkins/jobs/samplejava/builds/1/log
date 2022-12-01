@@ -1,0 +1,26 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/samplejava
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Nitindr/Java-project.git
+ > /usr/bin/git init /var/lib/jenkins/workspace/samplejava # timeout=10
+Fetching upstream changes from https://github.com/Nitindr/Java-project.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/Nitindr/Java-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/Nitindr/Java-project.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > /usr/bin/git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b8fba034e9f88f45c0aabc0cf18e34736cfdd03b (refs/remotes/origin/main)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f b8fba034e9f88f45c0aabc0cf18e34736cfdd03b # timeout=10
+Commit message: "deleted"
+First time build. Skipping changelog.
+[samplejava] $ /bin/sh -xe /tmp/jenkins18237172241425701175.sh
++ cd /var/lib/jenkins/worksapce/Java-project
+/tmp/jenkins18237172241425701175.sh: 2: cd: can't cd to /var/lib/jenkins/worksapce/Java-project
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

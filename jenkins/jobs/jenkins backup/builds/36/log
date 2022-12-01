@@ -1,0 +1,71 @@
+Started by user [8mha:////4O80W6WtAk9UEly/pNKjNZe0up0pHDdD0BJHsPOQWu7WAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZe/dLi1CL9vMySzLyUIgAJI3WpwgAAAA==[0mNitin D R
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/jenkins backup
+[jenkins backup] $ /bin/sh -xe /tmp/jenkins10963743427122810831.sh
++ cp -R /var/lib/jenkins/ /root/backup/Jenkins-backup
++ cd /root/backup/Jenkins-backup/jenkins
++ git add config.xml
++ git commit -m added jenkins backup
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   jobs/jenkins backup/builds/permalinks
+	modified:   jobs/jenkins backup/config.xml
+	modified:   jobs/jenkins backup/nextBuildNumber
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.cache/
+	.config/
+	.java/
+	.lastStarted
+	.owner
+	.ssh/
+	Jenkins-backup/
+	caches/
+	credentials.xml
+	fingerprints/
+	hudson.model.UpdateCenter.xml
+	hudson.plugins.emailext.ExtendedEmailPublisher.xml
+	hudson.plugins.git.GitTool.xml
+	hudson.plugins.gradle.Gradle.xml
+	hudson.tasks.Ant.xml
+	hudson.tasks.Maven.xml
+	identity.key.enc
+	jenkins.install.InstallUtil.lastExecVersion
+	jenkins.install.UpgradeWizard.state
+	jenkins.model.JenkinsLocationConfiguration.xml
+	jenkins.mvn.GlobalMavenConfig.xml
+	jenkins.plugins.git.GitHooksConfiguration.xml
+	jenkins.security.QueueItemAuthenticatorConfiguration.xml
+	jenkins.security.UpdateSiteWarningsConfiguration.xml
+	jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml
+	jenkins.telemetry.Correlator.xml
+	jobs/jenkins backup/builds/34/
+	jobs/jenkins backup/builds/35/
+	jobs/jenkins backup/builds/36/
+	logs/
+	nodeMonitors.xml
+	nodes/
+	org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration.xml
+	org.jenkinsci.plugins.gitclient.JGitApacheTool.xml
+	org.jenkinsci.plugins.gitclient.JGitTool.xml
+	org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+	plugins/
+	queue.xml
+	queue.xml.bak
+	secret.key
+	secret.key.not-so-secret
+	secrets/
+	selenium.log
+	updates/
+	userContent/
+	users/
+	workspace/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
